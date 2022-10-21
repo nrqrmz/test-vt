@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   get '/psicologo', to: 'pages#psicologo'
+  get '/psicologos', to: 'psychologists#index', as: :all
+  get '/psicologos/new', to: 'psychologists#new', as: :new_psychologist
 end
