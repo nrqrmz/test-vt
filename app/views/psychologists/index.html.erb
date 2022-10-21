@@ -1,19 +1,33 @@
-<ul>
-  <% @psychologists.each do |psych| %>
-    <li>
-      <%= psych.first_name %> <%= psych.flast_name %>
-    </li>
+<div class="container">
+  <%= form_with url: all_path, method: :get, class: "d-flex mb-5" do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "form-control",
+      placeholder: "Type something here"
+    %>
+    <%= submit_tag "Search", class: "btn btn-primary" %>
   <% end %>
-</ul>
 
-<%= form_with url: all_path, method: :get, class: "d-flex" do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Type something here"
-  %>
-  <%= submit_tag "Search", class: "btn btn-primary" %>
-<% end %>
+  <br>
+  <br>
+  <br>
+
+  <div class="psycho-wrapper mt-5">
+    <% @psychologists.each do |psych| %>
+      <div class="psycho-card">
+        <img src="<%= psych.photo_url %>" alt="">
+        <div>
+          <h2><%= psych.first_name %> <%= psych.flast_name %></h2>
+          <p><%= psych.specialty %></p>
+          <p><%= psych.modality %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+
+
+</div>
 
 <!--
 

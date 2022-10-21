@@ -101,3 +101,28 @@ body {
   /* height: 40%; */
   margin-top: 80px;
 }
+
+.psycho-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #eafaeb;
+  padding: 40px;
+}
+
+.psycho-card {
+  background-color: white;
+  width: 240px;
+  margin: 24px;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+
+.psycho-card img {
+  width: 100%;
+  height: 280px;
+}
+
+.psycho-card div {
+  padding: 0 16px;
+}
