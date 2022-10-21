@@ -1,1 +1,18 @@
+<div class="container">
+  <%= form_with url: new_psychologist_path, method: :get, class: "d-flex mb-5" do |f| %>
+    <%= f.label :first_name, "Nombre" %>
+    <%= f.text_field :first_name %>
+    <%= f.label :flast_name, "Apellido Paterno" %>
+    <%= f.text_field :flast_name %>
+    <%= f.label :mlast_name, "Apellido Materno" %>
+    <%= f.text_field :mlast_name %>
+    <%= f.label :modality, "Modalidad" %>
+    <%= f.text_field :modality %>
+    <%= f.label :specialty, "Especialidad" %>
+    <%= f.text_field :specialty %>
+    <%= f.label :photo_url, "URL de foto" %>
+    <%= f.text_field :photo_url %>
 
+    <%= submit_tag "Enviar", class: "btn btn-primary" %>
+  <% end %>
+</div>
