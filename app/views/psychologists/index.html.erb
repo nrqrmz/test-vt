@@ -15,7 +15,9 @@
   <div class="psycho-wrapper mt-5">
     <% @psychologists.shuffle.each do |psych| %>
       <div class="psycho-card">
-        <img src="<%= psych.photo_url %>" alt="">
+        <a href="/psicologos/<%= psych.id %>">
+          <img src="<%= psych.photo_url %>" alt="">
+        </a>
         <div>
           <h2><%= psych.first_name %> <%= psych.flast_name %></h2>
           <p><%= psych.specialty %></p>

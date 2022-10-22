@@ -139,3 +139,28 @@ body {
   color: rgb(17, 17, 17);
   margin-bottom: 32px;
 }
+
+.profile {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.profile h1 {
+  margin-bottom: 32px;
+}
+
+.profile img {
+  width: 50%;
+  margin-right: 16px;
+}
+
+.profile a {
+  margin-bottom: 32px;
+}
+
+.container > a {
+  background-color: black;
+  color: white;
+  font-size: 32px;
+  padding: 16px;
+}

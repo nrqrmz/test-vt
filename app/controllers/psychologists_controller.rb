@@ -15,6 +15,10 @@ class PsychologistsController < ApplicationController
     end
   end
 
+  def show
+    @psychologist = Psychologist.find(params[:id])
+  end
+
   def new
     @psychologist = Psychologist.new
   end

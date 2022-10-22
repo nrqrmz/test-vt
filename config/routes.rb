@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get '/psicologos', to: 'psychologists#index', as: :all
   get '/psicologos/new', to: 'psychologists#new', as: :new_psychologist
   post '/psicologos', to: 'psychologists#create', as: :psychologists
+  get '/psicologos/:id', to: 'psychologists#show', as: :psychologist
 end
