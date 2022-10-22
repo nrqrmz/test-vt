@@ -1,18 +1,33 @@
 <div class="container">
-  <%= form_with model: @psychologist, method: :post, class: "d-flex mb-5" do |f| %>
-    <%= f.label :first_name, "Nombre" %>
-    <%= f.text_field :first_name %>
-    <%= f.label :flast_name, "Apellido Paterno" %>
-    <%= f.text_field :flast_name %>
-    <%= f.label :mlast_name, "Apellido Materno" %>
-    <%= f.text_field :mlast_name %>
-    <%= f.label :modality, "Modalidad" %>
-    <%= f.text_field :modality %>
-    <%= f.label :specialty, "Especialidad" %>
-    <%= f.text_field :specialty %>
-    <%= f.label :photo_url, "URL de foto" %>
-    <%= f.text_field :photo_url %>
+  <div class="new-wrapper">
+    <h1>Registrese a continuacion</h1>
+    <%= form_with model: @psychologist, method: :post, class: "d-flex mb-5" do |f| %>
+      <div>
+        <%= f.label :first_name, "Nombre:" %>
+        <%= f.text_field :first_name %>
+      </div>
+      <div>
+        <%= f.label :flast_name, "Apellido Paterno:" %>
+        <%= f.text_field :flast_name %>
+      </div>
+      <div>
+        <%= f.label :mlast_name, "Apellido Materno:" %>
+        <%= f.text_field :mlast_name %>
+      </div>
+      <div>
+        <%= f.label :modality, "Modalidad:" %>
+        <%= f.text_field :modality %>
+      </div>
+      <div>
+        <%= f.label :specialty, "Especialidad:" %>
+        <%= f.text_field :specialty %>
+      </div>
+      <div>
+        <%= f.label :photo_url, "URL de foto:" %>
+        <%= f.text_field :photo_url %>
+      </div>
 
-    <%= submit_tag "Enviar", class: "btn btn-primary" %>
-  <% end %>
+      <%= submit_tag "Enviar", class: "btn btn-primary" %>
+    <% end %>
+  </div>
 </div>

@@ -126,3 +126,16 @@ body {
 .psycho-card div {
   padding: 0 16px;
 }
+
+.new-wrapper {
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.4);
+  width: 30%;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: rgb(239, 239, 239);
+}
+
+.new-wrapper h1 {
+  color: rgb(17, 17, 17);
+  margin-bottom: 32px;
+}
