@@ -13,7 +13,7 @@
   <br>
 
   <div class="psycho-wrapper mt-5">
-    <% @psychologists.each do |psych| %>
+    <% @psychologists.shuffle.each do |psych| %>
       <div class="psycho-card">
         <img src="<%= psych.photo_url %>" alt="">
         <div>
