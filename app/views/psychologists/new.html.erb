@@ -1,5 +1,5 @@
 <div class="container">
-  <%= form_with url: new_psychologist_path, method: :get, class: "d-flex mb-5" do |f| %>
+  <%= form_with model: @psychologist, method: :post, class: "d-flex mb-5" do |f| %>
     <%= f.label :first_name, "Nombre" %>
     <%= f.text_field :first_name %>
     <%= f.label :flast_name, "Apellido Paterno" %>

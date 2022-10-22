@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get '/psicologo', to: 'pages#psicologo'
   get '/psicologos', to: 'psychologists#index', as: :all
   get '/psicologos/new', to: 'psychologists#new', as: :new_psychologist
+  post '/psicologos', to: 'psychologists#create', as: :psychologists
 end

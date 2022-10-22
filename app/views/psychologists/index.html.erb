@@ -1,5 +1,5 @@
 <div class="container">
-    <%= form_with url: all_path, method: :get, class: "d-flex mb-5" do %>
+    <%= form_with model: @psychologist, method: :get, class: "d-flex mb-5" do %>
       <%= text_field_tag :query,
         params[:query],
         class: "form-control",

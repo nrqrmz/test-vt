@@ -18,4 +18,18 @@ class PsychologistsController < ApplicationController
   def new
     @psychologist = Psychologist.new
   end
+
+  def create
+    @psychologist = Psychologist.new(psychologist_params)
+    @psychologist.save
+
+    redirect_to all_path
+  end
+
+  private
+
+  def psychologist_params
+    params.require(:psychologist).permit(:first_name, :flast_name, :mlast_name, :modality, :specialty, :photo_url)
+    # params.require(:restaurant).permit(:name, :address, :rating)
+  end
 end
